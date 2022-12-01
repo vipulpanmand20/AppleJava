@@ -34,3 +34,27 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 
 !ENTRY org.eclipse.equinox.security 1 0 2022-12-01 20:32:19.487
 !MESSAGE New keyring password generated. 
+
+!ENTRY org.eclipse.egit.ui 4 0 2022-12-01 20:39:46.838
+!MESSAGE Cannot lock E:\Repositary\applejava\.git\index
+!STACK 0
+org.eclipse.jgit.errors.LockFailedException: Cannot lock E:\Repositary\applejava\.git\index
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:250)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:327)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:293)
+	at org.eclipse.jgit.lib.Repository.lockDirCache(Repository.java:1192)
+	at org.eclipse.jgit.api.RmCommand.call(RmCommand.java:148)
+	at org.eclipse.egit.ui.internal.staging.StagingView$49.run(StagingView.java:3148)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2022-12-01 20:40:22.582
+!MESSAGE Cannot lock E:\Repositary\applejava\.git\index
+!STACK 0
+org.eclipse.jgit.errors.LockFailedException: Cannot lock E:\Repositary\applejava\.git\index
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:250)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:327)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:293)
+	at org.eclipse.jgit.lib.Repository.lockDirCache(Repository.java:1192)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:148)
+	at org.eclipse.egit.ui.internal.staging.StagingView$48.run(StagingView.java:3119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
